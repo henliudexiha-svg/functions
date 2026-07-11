@@ -27,3 +27,4 @@ execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard p
 execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ld 0
 execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ldjy 0
 execute if entity @a[tag=!"新玩家"]  as @a[tag=!"新玩家"] run scoreboard players set @s ldjy2 100
+# byd臭臭末影
