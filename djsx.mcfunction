@@ -46,6 +46,45 @@ execute  as @a[tag=tp,hasitem={item=ender_eye,data=10},scores={dj=5}] if score @
 execute  as @a[tag=tp,hasitem={item=diamond,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 6
 execute  as @a[tag=tp,hasitem={item=diamond,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s diamond 10 1
 
+execute  as @a[tag=tp,hasitem={item=qw_zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 7
+execute  as @a[tag=tp,hasitem={item=qw_zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw1 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw2},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 8
+execute as @a[tag=tp,hasitem={item=qw_zjqw2},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw2 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw3},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 9
+execute as @a[tag=tp,hasitem={item=qw_zjqw3},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw3 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw4},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 10
+execute as @a[tag=tp,hasitem={item=qw_zjqw4},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw4 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw5},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 11
+execute as @a[tag=tp,hasitem={item=qw_zjqw5},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw5 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw6},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 12
+execute as @a[tag=tp,hasitem={item=qw_zjqw6},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw6 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw7},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 13
+execute as @a[tag=tp,hasitem={item=qw_zjqw7},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw7 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw8},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 14
+execute as @a[tag=tp,hasitem={item=qw_zjqw8},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw8 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw9},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 15
+execute as @a[tag=tp,hasitem={item=qw_zjqw9},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw9 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 16
+execute as @a[tag=tp,hasitem={item=qw_zjqw10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw10 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 17
+execute as @a[tag=tp,hasitem={item=qw_zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw11 0 1
+
+
+
+
+
+
+
 execute  as @a[tag=tp,scores={dj=1}] if score @s jy >= @s jy2 run tellraw @a {"rawtext":[{"text":"§3§l修士 §l§6"},{"selector":"@s"},{"text":"§l§f洗去凡人§0瘴气§f，突破到练气初期，从此§4仙§3凡§f两立"}]}
 execute  as @a[tag=tp,scores={dj=2}] if score @s jy >= @s jy2 run tellraw @a {"rawtext":[{"text":"§3§l修士 §l§6"},{"selector":"@s"},{"text":"§l§f吸天地之灵，突破到练气中期"}]}
 execute  as @a[tag=tp,scores={dj=3}] if score @s jy >= @s jy2 run tellraw @a {"rawtext":[{"text":"§3§l修士 §l§6"},{"selector":"@s"},{"text":"§l§f吸天地之灵，突破到练气后期"}]}
@@ -322,13 +361,24 @@ execute if entity @a[tag="属性校准"]  run scoreboard players add @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players add @a[tag="属性校准", scores={tdqw=5}] hl 25
 #沧海珠
 execute if entity @a[tag="属性校准"]  run scoreboard players add @a[tag="属性校准", scores={tdqw=6}] ll2 1333
+#青藤心露
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=7}] hp2 600
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=7}] hx 50
+#血眼
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=8}] hp2 666
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=8}] atk 66
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=8}] hx 6
+#苹果
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hp2 1110
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] fy 11
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hx 11
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hl 11
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hx 1
 
 
 
 
-
-
-
+execute if entity @a[scores={tdqw=5}] as @a[scores={tdqw=8}]  run effect @s night_vision  infinite 0 true
 execute if entity @a[scores={tdqw=5}] as @a[scores={tdqw=5}]  run effect @s night_vision  infinite 0 true
 execute if entity @a[scores={tdqw=5}] as @a[scores={tdqw=5}]  run effect @s speed infinite 1 true 
 # 不眠瞳有常驻夜视和速度效果，直接在校准阶段补效果。
