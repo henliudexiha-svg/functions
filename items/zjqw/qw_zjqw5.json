@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "minecraft:foil": true,
-      "identifier": "cs:csqw3",
+      "identifier": "cs:csqw5",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed",
@@ -12,7 +12,7 @@
     },
     "components": {
          "minecraft:display_name": {
-        "value": "§r§f§l[§aC§f] 筑基奇物—飘零梅\n§r§f\n雪覆千山冷，梅开一树新。\n寒枝栖瘦影，何日返故林？\n\n§7放在背包时：\n§9突破筑基期时可以\n+50    真实伤害\n+100    回血\n+200%    暴伤§4\n-500  最大生命值"
+        "value": "§r§f§l[§aC§f] 筑基奇物—飘零梅\n§r§f\n雪覆千山冷，梅开一树新。\n寒枝栖瘦影，何日返故林？\n\n§7放在背包时：\n§9突破筑基期时可以\n+20    真实伤害\n+10    回血\n+70%    暴伤\n§4-300    最大生命值"
       },
       "minecraft:icon": "apple"
     }
