@@ -79,6 +79,12 @@ execute as @a[tag=tp,hasitem={item=qw_zjqw10},scores={dj=5}] if score @s jy >= @
 execute as @a[tag=tp,hasitem={item=qw_zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 17
 execute as @a[tag=tp,hasitem={item=qw_zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw11 0 1
 
+execute as @a[tag=tp,hasitem={item=qw_zjqw12},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 18
+execute as @a[tag=tp,hasitem={item=qw_zjqw12},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw12 0 1
+
+execute as @a[tag=tp,hasitem={item=qw_zjqw13},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 19
+execute as @a[tag=tp,hasitem={item=qw_zjqw13},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw13 0 1
+
 
 
 
@@ -374,7 +380,47 @@ execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属�
 execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hx 11
 execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hl 11
 execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=9}] hx 1
-
+#飘零梅
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=11}] hp2 -500
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=11}] bs 200
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=11}] hx 100
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=11}] zs 50
+#烬海遗骨
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=12}] hp2 700
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=12}] zs 90
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=12}] bj 30
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=12}] fy -250
+#无相天章
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=13}] ll2 600
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=13}] hl 60
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=13}] sb 5
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=13}] atk -100
+#赤曜古藤
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=14}] atk 22
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=14}] hx 80
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=14}] xx 15
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=14}] hp2 -500
+#听潮玉简
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=15}] hp2 300
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=15}] ll2 200
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=15}] hl 10
+#山川百脉阵图
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=16}] fy 10
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=16}] ll2 500
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=16}] hl 50
+#烈炎羽
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=17}] atk 91
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=17}] zs 10
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=17}] bs 66
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=17}] hp2 -400
+#行云碑
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=18}] hp2 800
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=18}] fy 100
+#灵怒火
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=19}] atk 60
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=19}] hx 5
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=19}] bj 50
+execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属性校准", scores={tdqw=19}] fy -30
 
 
 
@@ -404,5 +450,3 @@ execute if entity @a[tag="属性校准"] run tag @a[tag="属性校准"] remove "
 # 清理突破标签，避免下个 tick 重复升境界；非突破试炼状态的 tpzt 也回到 0。
 tag @a[tag=tp] remove tp
 scoreboard players set @a[tag=!tpsj,scores={tpzt=2..}] tpzt 0 
-
-

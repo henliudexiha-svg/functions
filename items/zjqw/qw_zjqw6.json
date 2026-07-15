@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+      "minecraft:foil": true,
+      "identifier": "cs:csqw6",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.bed",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "§r§f§l[§aC§f] 筑基奇物—烬海遗骨\n§r§f\n劫火焚潮海亦枯，余灰深处葬仙骨。\n千年不灭幽蓝焰，一寸残骸照夜途。\n\n§7放在背包时：\n§9突破筑基期时可以\n+700    最大生命值\n+90    真实伤害\n+30%    暴击率\n§4-250  防御"
+      },
+      "minecraft:icon": "apple"
+    }
+  }
+}
