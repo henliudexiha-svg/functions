@@ -2,7 +2,8 @@
   "format_version": "1.21.50", 
   "minecraft:item": {
     "description": {
-      "identifier": "cs:csqw1",
+      "minecraft:foil": true,
+      "identifier": "zj:zjqw4",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed", 
@@ -11,9 +12,9 @@
     },
     "components": { 
          "minecraft:display_name": {
-        "value": "[cesh] 奇物1"
+        "value": "奇物4"
       },
-      "minecraft:icon": "diamond"
+      "minecraft:icon": "ender_pearl"
     }
   }
 }

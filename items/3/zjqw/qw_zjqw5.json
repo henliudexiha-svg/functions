@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "minecraft:foil": true,
-      "identifier": "cs:csqw5",
+      "identifier": "zj:zjqw5",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed",
