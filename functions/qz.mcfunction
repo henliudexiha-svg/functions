@@ -200,3 +200,9 @@ scoreboard objectives add wqjx dummy
 
 #雪球菜单
 scoreboard objectives add cd dummy
+
+scoreboard objectives add ls1 dummy 
+scoreboard objectives add xw1 dummy
+
+
+scoreboard objectives add gm dummy

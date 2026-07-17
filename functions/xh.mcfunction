@@ -136,14 +136,15 @@ execute if score tick tick matches 20.. run scoreboard players set tick tick 0
 execute if score "10" tick matches 10.. run scoreboard players set "10" tick 0
 
 
-
 # 雪球菜单
 function cd
-
 
 #灵力枪
 function dyq
 
-
 #npc交流
 function jqnpc
+
+function bhsx
+
+function sdgm
