@@ -11,7 +11,7 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD+§r] §l§a练气功法§r§l-坐山诀§r\n\n坐山享其成\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+400  最大生命值\n§9+10    防御力\n§9+5    回血"
+        "value": "§r[§gD+§r] §l§a练气功法§r§l-坐山诀§r\n\n坐山享其成\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+400  最大生命值\n§9+3    防御力\n§9+3    回血"
       },
       "minecraft:icon": "book_normal"
       ,"minecraft:glint": true
