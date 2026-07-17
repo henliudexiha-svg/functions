@@ -13,7 +13,7 @@
         "minecraft:display_name": {
         "value": "§r[§gD++§r] 云水幻梦功§r\n\n以灵力催动秘法幻术强化肉身\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+380  最大生命值\n§9+20   攻击力\n§9+10   防御力"
       },
-      "minecraft:icon": "paper"
+      "minecraft:icon": "book_normal"
       ,"minecraft:glint": true
     }
   }

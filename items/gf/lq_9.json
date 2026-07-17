@@ -13,7 +13,7 @@
         "minecraft:display_name": {
         "value": "§r[§2C-§r] 星尘引气决§r\n\n吸收浩瀚星辉之力修炼\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+500  最大生命值\n§9+45   攻击力\n§9+25   最大灵力值"
       },
-      "minecraft:icon": "paper"
+      "minecraft:icon": "book_normal"
       ,"minecraft:glint": true
     }
   }

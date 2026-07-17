@@ -1,0 +1,152 @@
+functions 文件作用说明
+
+说明：
+本文件按当前 functions 目录内容整理，用来快速判断每个 mcfunction 或子目录的大致职责。
+Minecraft 函数里的注释行以 # 开头，普通 txt 中仅做阅读说明，不参与游戏运行。
+
+
+一、入口与初始化
+
+functions/tick.json
+每 tick 自动调用的入口配置，目前只调用 xh。
+
+functions/xh.mcfunction
+主循环函数。调度日期天气、怪物属性、战斗受击、突破试炼、属性计算、菜单显示、丹药、死亡处理、任务剧情、功法修炼等系统。
+
+functions/qz.mcfunction
+初始化脚本。设置 gamerule，声明所有 scoreboard objective，写入常用常量、临时变量、剧情/任务/战斗/炼丹/突破等计分板。
+
+functions/xwj.mcfunction
+新玩家初始化。设置初始生命、灵力、攻击、防御、灵石、境界、修为、炼丹等级、uuid，并启动第一段剧情。
+
+functions/bughf.mcfunction
+修复/补发辅助。根据剧情进度补发护照类物品，触发属性校准，重置面板状态，并清理执行实体。
+
+functions/awa.mcfunction
+调试或快捷辅助。把当前修为设置为突破所需修为，并给玩家添加 tpsj 标签进入突破试炼。
+
+
+二、核心系统
+
+functions/day.mcfunction
+日期和天气系统。推进 daytime/day，刷新矿场，处理每日任务等待天数、瘴气变化、天气随机、雾雨雷血月等特殊效果。
+
+functions/djsx.mcfunction
+等级属性与突破结算。玩家突破后提升境界，按 dj 重写基础属性，并叠加功法、筑基奇物等永久加成。
+
+functions/sxjs.mcfunction
+最终属性计算。读取武器、装备和临时丹药加成，计算 atkatk、fyfy、hp2hp2、ll2ll2、bjbj、sbsb 等最终战斗数值。
+
+functions/hxxt.mcfunction
+战斗与受击核心。处理自定义攻击入口、武器显示、灵力枪弹体、受击检测、暴击、闪避、防御、伤害吸收、扣血、吸血和临时标签清理。
+
+functions/dyq.mcfunction
+鱼竿类武器技能。包括灵力枪、燧发枪、灵力弯刀等，通过 fishing_hook 和 boat 弹体实现远程或范围攻击，并消耗灵力/弹药。
+
+functions/dy.mcfunction
+丹药与资源增量结算。处理金苹果、附魔金苹果、练气丹等使用效果，也负责 xwa/lsa/yja 这类待结算修为、灵石、耀金的显示和入账。
+
+functions/gf.mcfunction
+功法学习。手持功法书触发修炼，消耗灵力推进 gftime，完成后写入 gf 并触发属性校准。
+
+functions/gw.mcfunction
+怪物属性与掉落。初始化特定怪物生命、攻击、防御，按死亡随机值加载掉落结构，并处理夜晚怪物倍率和死亡清理。
+
+functions/swcl.mcfunction
+死亡处理。处理剧情免死、普通死亡播报、灵力枪击杀播报、突破失败清理，以及普通/vip 复活后的生命灵力重置。
+
+functions/tpsj.mcfunction
+突破试炼。使用 tpzt/tptime/tprand/tptick/tpsh 控制雷劫判定条，玩家用末影珍珠命中判定点来减伤，次数归零后进入正式突破。
+
+functions/xqcd.mcfunction
+雪球/视角菜单 actionbar。按 xqcd 显示属性总览、战斗信息、突破试炼面板、自身状态面板。
+
+functions/wy.mcfunction
+剧情角色位移。根据 wy 分数控制道玄子、寇洪、京城守卫、赵管事、神秘人等 NPC 或玩家自动移动。
+
+
+三、世界资源与炼丹
+
+functions/kw/fr.mcfunction
+矿场刷新。清理矿区并按结构随机刷新不同矿层和矿物资源。
+
+functions/kw/frkw.mcfunction
+矿物掉落转换。把原版矿物掉落物转换成自定义材料结构，并清理无用掉落。
+
+functions/ld/ld.mcfunction
+炼丹核心。扫描配方方块，记录丹药 id、所需灵力、已投入灵力和成功率；点火后播放炼丹动画，生成成品或失败物，并处理炼丹经验升级。
+
+functions/ld/cyy.mcfunction
+草药园/采药点生成。加载采药区域，用 armor_stand 随机定位采药点，并控制采药点数量和 tickingarea 清理。
+
+functions/ld/cyy1.mcfunction
+采药点结算。让采药点落地生成甜浆果，玩家靠近后按境界和随机值掉落对应草药结构。
+
+
+四、剧情系统
+
+functions/jq/jq.mcfunction
+剧情调度器。根据玩家的 jqa 目标节点调用具体剧情函数，剧情结束后同步 jq=jqa，恢复玩家控制，并处理部分连续跳转节点。
+
+functions/jq/add.mcfunction
+剧情推进快捷函数。给最近玩家添加 jq 标签，并让 jqa 加 1。
+
+functions/jq/ks.mcfunction
+开局剧情初始化。设置新玩家初始属性、uuid、第一段剧情目标，并传送到开局位置。
+
+functions/jq/1/jq1.mcfunction 至 functions/jq/1/jq32.mcfunction
+第一章剧情节点。每个 jqN 对应一个剧情片段或场景事件，由 jq/jq.mcfunction 按 jqa 调用。
+
+functions/jq/1/tp1.mcfunction、functions/jq/1/tp2.mcfunction
+第一章内的传送/场景辅助函数。
+
+functions/jq/1/第一章
+第一章剧情文本草稿或章节说明，不是 mcfunction 命令文件。
+
+functions/jq/2/jq50.mcfunction 至 functions/jq/2/jq60.mcfunction
+第二章或后续剧情节点。jq54zx 是其中一个特殊分支/中转剧情节点。
+
+
+五、任务系统
+
+functions/rw/rw.mcfunction
+主线任务查询与提交。检测当前任务 rwa 是否完成，完成后同步 rw、播放反馈、触发剧情；未完成时输出当前任务提示。
+
+functions/rw/1/rw5.mcfunction
+第一章任务 5 的特殊提交。检查 64 个货币，触发殿试相关剧情 jqa=8。
+
+functions/rw/1/rw8.mcfunction
+第一章任务 8 的特殊提交。检查 64 个货币，触发状元线相关剧情 jqa=13。
+
+functions/rw/2/rw28.mcfunction
+第二章任务 28/29 的特殊提交。检查 64 个货币，触发洗白钱财相关剧情 jqa=55 或 jqa=56。
+
+functions/rw/wxm/rw.mcfunction
+日常/委托任务系统。按境界分配 rw2 任务，检测琉璃秘境材料提交，发放灵石或修为奖励，并限制当日重复完成。
+
+
+六、交易与商店
+
+functions/jy/a/*.mcfunction
+大玄国货币和材料交易。
+bnddcnj、bnddcr、ddcnj、ddcr：把怪物材料兑换为大玄国货币。
+ps、tj、xstz、xt、zs：用货币购买对应材料结构。
+
+functions/jy/b/*.mcfunction
+瘴气相关交易或修行。
+jtlc：花费灵石大量祛除瘴气。
+sy：消耗生命少量祛除瘴气。
+xhqxz：学习玄黄清心咒，获得每日自动祛除瘴气状态。
+
+functions/jy/sw/*.mcfunction
+食物商店。
+jlb：购买金萝卜。
+jr：购买鸡肉。
+nr：购买熟牛肉。
+qq：购买锁定曲奇。
+
+
+七、其他工具
+
+functions/统计.ps1
+PowerShell 统计脚本。递归统计目录内文件行数和字符数，用于查看工程规模。
