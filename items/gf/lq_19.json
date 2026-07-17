@@ -2,7 +2,7 @@
   "format_version": "1.21.50", 
   "minecraft:item": {
     "description": {
-      "identifier": "gf:lq_6",
+      "identifier": "gf:lq_19",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed", 
@@ -11,9 +11,9 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD++§r] 造化烘炉功§r\n\n天人感应天地烘炉与人体共鸣\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§4-100  最大生命值\n-15   防御力\n§9+60   攻击力"
+        "value": "§r[§gE§r] §l§a练气功法§r§l-聚灵纳气诀§r\n\n最基础的功法...\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+300  最大生命值\n§9+10   攻击力\n§9+5    防御力"
       },
-      "minecraft:icon": "apple"
+      "minecraft:icon": "paper"
       ,"minecraft:glint": true
     }
   }

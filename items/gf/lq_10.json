@@ -2,7 +2,7 @@
   "format_version": "1.21.50", 
   "minecraft:item": {
     "description": {
-      "identifier": "gf:lq_8",
+      "identifier": "gf:lq_10",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed", 
@@ -11,9 +11,9 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§eE++§r] 铁布衫§r\n\n调动灵力用于加护自身\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§4-20   攻击力\n§9+30   防御力"
+        "value": "§r[§gD§r] 青木生长决§r\n\n汲取草木生机恢复自身\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+350  最大生命值\n§9+2    回血\n§9+2    回灵"
       },
-      "minecraft:icon": "apple"
+      "minecraft:icon": "paper"
       ,"minecraft:glint": true
     }
   }

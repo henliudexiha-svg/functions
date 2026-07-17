@@ -2,7 +2,7 @@
   "format_version": "1.21.50", 
   "minecraft:item": {
     "description": {
-      "identifier": "gf:lq_15",
+      "identifier": "gf:lq_8",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed", 
@@ -11,9 +11,9 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gE-?§r] §l§a练气功法§r§l-藏剑术§r\n\n将剑藏起,出其不意\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+40   攻击力\n§4-40   攻击力"
+        "value": "§r[§eE++§r] 铁布衫§r\n\n调动灵力用于加护自身\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§4-20   攻击力\n§9+30   防御力"
       },
-      "minecraft:icon": "apple"
+      "minecraft:icon": "paper"
       ,"minecraft:glint": true
     }
   }

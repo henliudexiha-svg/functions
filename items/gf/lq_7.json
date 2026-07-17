@@ -2,7 +2,7 @@
   "format_version": "1.21.50", 
   "minecraft:item": {
     "description": {
-      "identifier": "gf:lq_12",
+      "identifier": "gf:lq_7",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed", 
@@ -11,9 +11,9 @@
     },
     "components": { 
         "minecraft:display_name": {
-        "value": "§r[§gD++§r] §l§a练气功法§r§l-庚金裂石决§r\n\n以金锐之气淬炼,锋利无比\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+45    攻击力"
+        "value": "§r[§eE++§r] 破阵子§r\n\n扇形爆发激活练气期灵力\n\n§i限制境界：练气期及以上\n\n§9学习此功法可以：\n§9+30   攻击力"
       },
-      "minecraft:icon": "apple"
+      "minecraft:icon": "paper"
       ,"minecraft:glint": true
     }
   }
