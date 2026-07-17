@@ -26,7 +26,7 @@
 # 低境界可直接突破；筑基前后会被 tpsj.mcfunction 拦截走雷劫流程。
 execute  as @a[tag=tp] if score @s jy >= @s jy2 run scoreboard players add @s dj 1
 execute  as @a[tag=tp] if score @s jy >= @s jy2 run effect @s speed 600 1 true
-execute  as @a[tag=tp] if score @s jy >= @s jy2 run effect @s Haste 600 1 true
+execute  as @a[tag=tp] if score @s jy >= @s jy2 run effect @s haste 600 1 true
 execute  as @a[tag=tp] at @s if score @s jy >= @s jy2 run playsound random.levelup @a[r=100] ~~~ 1 0.2
 
 
