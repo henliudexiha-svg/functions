@@ -46,45 +46,44 @@ execute  as @a[tag=tp,hasitem={item=ender_eye,data=10},scores={dj=5}] if score @
 execute  as @a[tag=tp,hasitem={item=diamond,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 6
 execute  as @a[tag=tp,hasitem={item=diamond,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s diamond 10 1
 
-execute  as @a[tag=tp,hasitem={item=qw_zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 7
-execute  as @a[tag=tp,hasitem={item=qw_zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw1 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 7
+execute as @a[tag=tp,hasitem={item=zj:zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw1 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw2},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 8
-execute as @a[tag=tp,hasitem={item=qw_zjqw2},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw2 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw2},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 8
+execute as @a[tag=tp,hasitem={item=zj:zjqw2},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw2 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw3},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 9
-execute as @a[tag=tp,hasitem={item=qw_zjqw3},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw3 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw3},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 9
+execute as @a[tag=tp,hasitem={item=zj:zjqw3},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw3 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw4},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 10
-execute as @a[tag=tp,hasitem={item=qw_zjqw4},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw4 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw4},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 10
+execute as @a[tag=tp,hasitem={item=zj:zjqw4},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw4 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw5},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 11
-execute as @a[tag=tp,hasitem={item=qw_zjqw5},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw5 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw5},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 11
+execute as @a[tag=tp,hasitem={item=zj:zjqw5},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw5 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw6},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 12
-execute as @a[tag=tp,hasitem={item=qw_zjqw6},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw6 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw6},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 12
+execute as @a[tag=tp,hasitem={item=zj:zjqw6},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw6 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw7},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 13
-execute as @a[tag=tp,hasitem={item=qw_zjqw7},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw7 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw7},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 13
+execute as @a[tag=tp,hasitem={item=zj:zjqw7},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw7 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw8},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 14
-execute as @a[tag=tp,hasitem={item=qw_zjqw8},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw8 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw8},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 14
+execute as @a[tag=tp,hasitem={item=zj:zjqw8},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw8 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw9},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 15
-execute as @a[tag=tp,hasitem={item=qw_zjqw9},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw9 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw9},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 15
+execute as @a[tag=tp,hasitem={item=zj:zjqw9},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw9 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 16
-execute as @a[tag=tp,hasitem={item=qw_zjqw10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw10 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 16
+execute as @a[tag=tp,hasitem={item=zj:zjqw10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw10 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 17
-execute as @a[tag=tp,hasitem={item=qw_zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw11 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 17
+execute as @a[tag=tp,hasitem={item=zj:zjqw11},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw11 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw12},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 18
-execute as @a[tag=tp,hasitem={item=qw_zjqw12},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw12 0 1
+execute as @a[tag=tp,hasitem={item=zj:zjqw12},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 18
+execute as @a[tag=tp,hasitem={item=zj:zjqw12},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw12 0 1
 
-execute as @a[tag=tp,hasitem={item=qw_zjqw13},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 19
-execute as @a[tag=tp,hasitem={item=qw_zjqw13},scores={dj=5}] if score @s jy >= @s jy2 run clear @s qw_zjqw13 0 1
-
+execute as @a[tag=tp,hasitem={item=zj:zjqw13},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 19
+execute as @a[tag=tp,hasitem={item=zj:zjqw13},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw13 0 1
 
 
 
