@@ -2,7 +2,7 @@
   "format_version": "1.21.50", 
   "minecraft:item": {
     "description": {
-      "identifier": "gf:yy_2",
+      "identifier": "gf:yy_1",
       "menu_category": {
         "category": "items",
         "group": "minecraft:itemGroup.name.bed", 

@@ -33,18 +33,23 @@ execute  as @a[tag=tp] at @s if score @s jy >= @s jy2 run playsound random.level
 
 # 筑基阶段需要消耗奇物，tdqw 记录玩家选择的筑基奇物类型。
 # 这些物品只在 dj=5 的突破瞬间消耗一次，之后 tdqw 会作为永久选择保留。
-execute  as @a[tag=tp,hasitem={item=bamboo,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 1 
-execute  as @a[tag=tp,hasitem={item=bamboo,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s bamboo 10 1
-execute  as @a[tag=tp,hasitem={item=blade_pottery_sherd,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 2 
-execute  as @a[tag=tp,hasitem={item=blade_pottery_sherd,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s blade_pottery_sherd 10 1
-execute  as @a[tag=tp,hasitem={item=blade_pottery_sherd,data=11},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 3 
-execute  as @a[tag=tp,hasitem={item=blade_pottery_sherd,data=11},scores={dj=5}] if score @s jy >= @s jy2 run clear @s blade_pottery_sherd 11 1
-execute  as @a[tag=tp,hasitem={item=mojang_banner_pattern,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 4 
-execute  as @a[tag=tp,hasitem={item=mojang_banner_pattern,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s mojang_banner_pattern 10 1
-execute  as @a[tag=tp,hasitem={item=ender_eye,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 5 
-execute  as @a[tag=tp,hasitem={item=ender_eye,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s ender_eye 10 1
-execute  as @a[tag=tp,hasitem={item=diamond,data=10},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 6
-execute  as @a[tag=tp,hasitem={item=diamond,data=10},scores={dj=5}] if score @s jy >= @s jy2 run clear @s diamond 10 1
+execute  as @a[tag=tp,hasitem={item=zj:zjqw14},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 1 
+execute  as @a[tag=tp,hasitem={item=zj:zjqw14},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw14 0 1
+
+execute  as @a[tag=tp,hasitem={item=zj:zjqw15},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 2 
+execute  as @a[tag=tp,hasitem={item=zj:zjqw15},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw15 0 1
+
+execute  as @a[tag=tp,hasitem={item=zj:zjqw16},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 3 
+execute  as @a[tag=tp,hasitem={item=zj:zjqw16},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw16 0 1
+
+execute  as @a[tag=tp,hasitem={item=zj:zjqw17},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 4 
+execute  as @a[tag=tp,hasitem={item=zj:zjqw17},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw17 0 1
+
+execute  as @a[tag=tp,hasitem={item=zj:zjqw18},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 5
+execute  as @a[tag=tp,hasitem={item=zj:zjqw18},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw18 0 1
+
+execute  as @a[tag=tp,hasitem={item=zj:zjqw19},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 6
+execute  as @a[tag=tp,hasitem={item=zj:zjqw19},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw19 0 1
 
 execute as @a[tag=tp,hasitem={item=zj:zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run scoreboard players set @s tdqw 7
 execute as @a[tag=tp,hasitem={item=zj:zjqw1},scores={dj=5}] if score @s jy >= @s jy2 run clear @s zj:zjqw1 0 1
