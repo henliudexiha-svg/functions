@@ -206,3 +206,4 @@ scoreboard objectives add xw1 dummy
 
 
 scoreboard objectives add gm dummy
+scoreboard objectives add cs dummy
