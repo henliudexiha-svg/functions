@@ -43,7 +43,12 @@ execute as @e[family=mob,name="§a树精",scores={hp=..0}] at @s if score @s gwr
 
 execute as @e[family=mob,name="§a树精",scores={hp=..0}] at @s if score @s gwrand matches 1..750 run structure load "sjdlw3" ~ ~0.5 ~
 
-
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hp 1200
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hp2 1200
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s fyfy 15
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s atk 45
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hx 10
+execute as @e[family=mob,name="§a树妖",tag=!ss] run effect @s speed infinite 1 true
 
 
 
