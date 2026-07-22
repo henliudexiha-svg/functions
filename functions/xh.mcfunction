@@ -9,6 +9,13 @@
 # 4. 最后清理计时器，避免下一轮重复触发。
 scoreboard players add "tick" tick 1
 scoreboard players add "10" tick 1 
+# 新上线或旧存档中没有该分数时，先给功法同修数默认值 1，避免后续除法遇到空分数。
+scoreboard players add @a gfrs 0
+scoreboard players set @a[scores={gfrs=..0}] gfrs 1
+# rsa 没有分数的玩家是新上线玩家，立即触发重算。
+scoreboard players add @a rsa 0
+execute if entity @a[scores={rsa=0}] run scoreboard players set "gfrs_recalc" rs 2
+scoreboard players set @a[scores={rsa=0}] rsa 1
 # execute if score "tick" tick matches 1 run scoreboard players add daytime day 1
  execute if score "tick" tick matches 1 run function day
 
@@ -18,8 +25,40 @@ function gw
 function hxxt
 execute if entity @a[tag=tpsj] run function tpsj
 # tp 表示已经通过突破试炼，或低境界直接突破；属性校准表示需要重新套用境界/功法/奇物属性。
+
+# 完成功法修炼会触发属性校准；在 djsx 清理标签前标记本 tick 需要刷新同修人数。
+execute if score "10" tick matches 5 if entity @a[tag="属性校准"] run scoreboard players set "gfrs_recalc" rs 2
 execute if score "10" tick matches 5 if entity @a[tag=tp] run function djsx
 execute if score "10" tick matches 5 if entity @a[tag="属性校准"] run function djsx
+execute if score "10" tick matches 5 if entity @a[tag="法不可同修"] run function djsx
+# 每轮统计在线人数；rsa 定期清理离线玩家标记，供顶部立即识别新上线玩家。
+execute if score "5s" tick matches 5 run scoreboard players set rs rs 0
+execute if score "5s" tick matches 5 as @a run scoreboard players add rs rs 1
+execute if score "5s" tick matches 5 unless score rs rs = rsa rs run scoreboard players set "gfrs_recalc" rs 2
+execute if score "5s" tick matches 5 run scoreboard players reset * rsa
+execute if score "5s" tick matches 5 run scoreboard players add @a rsa 1
+execute if score "5s" tick matches 5 run scoreboard players operation rsa rs = rs rs
+# gfrs_recalc：0=空闲，1=统计中，2=请求重算。gfrst 为临时结果。
+execute if score "gfrs_recalc" rs matches 2 run scoreboard players set @a gfrst 0
+execute if score "gfrs_recalc" rs matches 2 run tag @a remove gfrs_done
+execute if score "gfrs_recalc" rs matches 2 run tag @a remove gfrs_current
+execute if score "gfrs_recalc" rs matches 2 run scoreboard players set "gfrs_recalc" rs 1
+
+# 每 tick 只取一名未处理玩家，将他的 gf 与所有在线玩家比较。
+# 开销只与在线人数有关，不受功法编号和功法总数影响。
+execute if score "gfrs_recalc" rs matches 1 if entity @a[tag=!gfrs_done] run tag @a[tag=!gfrs_done,c=1] add gfrs_current
+execute as @a[scores={gf=1..}] if score "gfrs_recalc" rs matches 1 if entity @a[tag=gfrs_current] if score @s gf = @a[tag=gfrs_current,c=1] gf run scoreboard players add @s gfrst 1
+execute if score "gfrs_recalc" rs matches 1 run tag @a[tag=gfrs_current] add gfrs_done
+execute if score "gfrs_recalc" rs matches 1 run tag @a[tag=gfrs_current] remove gfrs_current
+
+# 所有在线玩家处理完后，未修功法者保持 1，然后一次性写回正式分数。
+execute if score "gfrs_recalc" rs matches 1 unless entity @a[tag=!gfrs_done] run scoreboard players set @a[scores={gfrst=..0}] gfrst 1
+# 新旧同修人数不同时，说明该玩家的功法属性分摊发生变化，需要刷新属性。
+execute as @a if score "gfrs_recalc" rs matches 1 unless entity @a[tag=!gfrs_done] unless score @s gfrs = @s gfrst run tag @s add "法不可同修"
+execute as @a if score "gfrs_recalc" rs matches 1 unless entity @a[tag=!gfrs_done] run scoreboard players operation @s gfrs = @s gfrst
+execute if score "gfrs_recalc" rs matches 1 unless entity @a[tag=!gfrs_done] run scoreboard players set "gfrs_recalc" rs 0
+execute if score "gfrs_recalc" rs matches 0 run tag @a[tag=gfrs_done] remove gfrs_done
+execute if score "gfrs_recalc" rs matches 0 run tag @a[tag=gfrs_current] remove gfrs_current
 # sxjs 每秒附近刷新最终属性，供战斗、回复、面板读取。
 execute if score "tick" tick matches 19 run function sxjs
 

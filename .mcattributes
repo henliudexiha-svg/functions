@@ -10,3 +10,4 @@ diagnostic.disable.behaviorpack.entities.missing=true
 diagnostic.disable.behaviorpack.mcfunction.missing=true
 diagnostic.disable.minecraft.commands.structure.syntax=true
 diagnostic.disable.minecraft.commands.invalid=true
+diagnostic.disable.minecraft.selector.attribute.unknown=true

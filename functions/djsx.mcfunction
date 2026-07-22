@@ -211,9 +211,6 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] jy2 12000
 
-
-
-
 #金丹初期-要金丹及以上功法
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=9}] atk 100
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=9}] hp2 3500
@@ -230,114 +227,6 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 #化神 需要天之髓
 #合道 需要天地之魄
 #长生 需要逆转天地之理
-
-#功法
-# 功法在基础属性之后叠加，gf 分段对应不同大境界功法。
-#练气（1-100）
-#小衍水决1_1
-execute if entity @a[tag="属性校准"]  run scoreboard players add @a[tag="属性校准", scores={gf=1}] ll2 50
-execute if entity @a[tag="属性校准"]  run scoreboard players add @a[tag="属性校准", scores={gf=1}] hl 3
-
-# [E+] 玄黄清心咒 (gf=2)
-execute as @a[tag="属性校准",scores={gf=2}] if entity @s[tag="属性校准",scores={gf=2}] run scoreboard players add @s hp2 200
-execute as @a[tag="属性校准",scores={gf=2}] if entity @s[tag="属性校准",scores={gf=2}] run scoreboard players add @s atk 5
-execute as @a[tag="属性校准",scores={gf=2}] if entity @s[tag="属性校准",scores={gf=2}] run scoreboard players add @s fy 3
-execute as @a[tag="属性校准",scores={gf=2}] if entity @s[tag="属性校准",scores={gf=2}] run scoreboard players add @s hx 1
-
-# [D+] 玄黄练心诀 (gf=3)
-execute as @a[tag="属性校准",scores={gf=3}] if entity @s[tag="属性校准",scores={gf=3}] run scoreboard players add @s hp2 350
-execute as @a[tag="属性校准",scores={gf=3}] if entity @s[tag="属性校准",scores={gf=3}] run scoreboard players add @s atk 8
-execute as @a[tag="属性校准",scores={gf=3}] if entity @s[tag="属性校准",scores={gf=3}] run scoreboard players add @s fy 5
-
-# [D] 烘炉功 (gf=4)
-execute as @a[tag="属性校准",scores={gf=4}] if entity @s[tag="属性校准",scores={gf=4}] run scoreboard players add @s hp2 -75
-execute as @a[tag="属性校准",scores={gf=4}] if entity @s[tag="属性校准",scores={gf=4}] run scoreboard players add @s fy -1
-execute as @a[tag="属性校准",scores={gf=4}] if entity @s[tag="属性校准",scores={gf=4}] run scoreboard players add @s atk 10
-
-# [D++] 云水幻梦功 (gf=5)
-execute as @a[tag="属性校准",scores={gf=5}] if entity @s[tag="属性校准",scores={gf=5}] run scoreboard players add @s hp2 580
-execute as @a[tag="属性校准",scores={gf=5}] if entity @s[tag="属性校准",scores={gf=5}] run scoreboard players add @s atk 8
-execute as @a[tag="属性校准",scores={gf=5}] if entity @s[tag="属性校准",scores={gf=5}] run scoreboard players add @s fy 3
-
-# [D++] 造化烘炉功 (gf=6)
-execute as @a[tag="属性校准",scores={gf=6}] if entity @s[tag="属性校准",scores={gf=6}] run scoreboard players add @s hp2 -150
-execute as @a[tag="属性校准",scores={gf=6}] if entity @s[tag="属性校准",scores={gf=6}] run scoreboard players add @s fy -5
-execute as @a[tag="属性校准",scores={gf=6}] if entity @s[tag="属性校准",scores={gf=6}] run scoreboard players add @s atk 20
-
-# [E++] 破阵子 (gf=7)
-execute as @a[tag="属性校准",scores={gf=7}] if entity @s[tag="属性校准",scores={gf=7}] run scoreboard players add @s atk 10
-
-# [E++] 铁布衫 (gf=8)
-execute as @a[tag="属性校准",scores={gf=8}] if entity @s[tag="属性校准",scores={gf=8}] run scoreboard players add @s atk -5
-execute as @a[tag="属性校准",scores={gf=8}] if entity @s[tag="属性校准",scores={gf=8}] run scoreboard players add @s fy 6
-
-# [C-] 星尘引气诀 (gf=9)
-execute as @a[tag="属性校准",scores={gf=9}] if entity @s[tag="属性校准",scores={gf=9}] run scoreboard players add @s hp2 700
-execute as @a[tag="属性校准",scores={gf=9}] if entity @s[tag="属性校准",scores={gf=9}] run scoreboard players add @s atk 10
-execute as @a[tag="属性校准",scores={gf=9}] if entity @s[tag="属性校准",scores={gf=9}] run scoreboard players add @s fy 6
-
-# [D] 青木生长诀 (gf=10)
-execute as @a[tag="属性校准",scores={gf=10}] if entity @s[tag="属性校准",scores={gf=10}] run scoreboard players add @s hp2 350
-execute as @a[tag="属性校准",scores={gf=10}] if entity @s[tag="属性校准",scores={gf=10}] run scoreboard players add @s hx 2
-execute as @a[tag="属性校准",scores={gf=10}] if entity @s[tag="属性校准",scores={gf=10}] run scoreboard players add @s hl 2
-
-# [E] 练气功法-厚土归元功 (gf=11)
-execute as @a[tag="属性校准",scores={gf=11}] if entity @s[tag="属性校准",scores={gf=11}] run scoreboard players add @s hp2 300
-execute as @a[tag="属性校准",scores={gf=11}] if entity @s[tag="属性校准",scores={gf=11}] run scoreboard players add @s fy 5
-
-# [D++] 练气功法-庚金裂石决 (gf=12)
-execute as @a[tag="属性校准",scores={gf=12}] if entity @s[tag="属性校准",scores={gf=12}] run scoreboard players add @s atk 15
-
-# [D+] 练气功法-坐山诀 (gf=13)
-execute as @a[tag="属性校准",scores={gf=13}] if entity @s[tag="属性校准",scores={gf=13}] run scoreboard players add @s fy 3
-execute as @a[tag="属性校准",scores={gf=13}] if entity @s[tag="属性校准",scores={gf=13}] run scoreboard players add @s hp2 400
-execute as @a[tag="属性校准",scores={gf=13}] if entity @s[tag="属性校准",scores={gf=13}] run scoreboard players add @s hx 3
-
-# [D] 练气功法-风息步 (gf=14)
-execute as @a[tag="属性校准",scores={gf=14}] if entity @s[tag="属性校准",scores={gf=14}] run scoreboard players add @s atk 7
-execute as @a[tag="属性校准",scores={gf=14}] if entity @s[tag="属性校准",scores={gf=14}] run scoreboard players add @s ll2 20
-
-# [E-?] 练气功法-藏剑术 (gf=15)
-execute as @a[tag="属性校准",scores={gf=15}] if entity @s[tag="属性校准",scores={gf=15}] run scoreboard players add @s atk 10
-
-# [C-] 练气功法-五灵感气法 (gf=16)
-execute as @a[tag="属性校准",scores={gf=16}] if entity @s[tag="属性校准",scores={gf=16}] run scoreboard players add @s atk 8
-execute as @a[tag="属性校准",scores={gf=16}] if entity @s[tag="属性校准",scores={gf=16}] run scoreboard players add @s fy 5
-execute as @a[tag="属性校准",scores={gf=16}] if entity @s[tag="属性校准",scores={gf=16}] run scoreboard players add @s hp2 500
-execute as @a[tag="属性校准",scores={gf=16}] if entity @s[tag="属性校准",scores={gf=16}] run scoreboard players add @s ll2 50
-execute as @a[tag="属性校准",scores={gf=16}] if entity @s[tag="属性校准",scores={gf=16}] run scoreboard players add @s hx 4
-execute as @a[tag="属性校准",scores={gf=16}] if entity @s[tag="属性校准",scores={gf=16}] run scoreboard players add @s hl 2
-
-# [D+] 练气功法-大日金乌诀 (gf=17)
-execute as @a[tag="属性校准",scores={gf=17}] if entity @s[tag="属性校准",scores={gf=17}] run scoreboard players add @s atk 5
-execute as @a[tag="属性校准",scores={gf=17}] if entity @s[tag="属性校准",scores={gf=17}] run scoreboard players add @s hp2 800
-
-# [D++] 练气功法-灵植共生法 (gf=18)
-execute as @a[tag="属性校准",scores={gf=18}] if entity @s[tag="属性校准",scores={gf=18}] run scoreboard players add @s hp2 1000
-execute as @a[tag="属性校准",scores={gf=18}] if entity @s[tag="属性校准",scores={gf=18}] run scoreboard players add @s hx 10
-execute as @a[tag="属性校准",scores={gf=18}] if entity @s[tag="属性校准",scores={gf=18}] run scoreboard players add @s atk -10
-execute as @a[tag="属性校准",scores={gf=18}] if entity @s[tag="属性校准",scores={gf=18}] run scoreboard players add @s fy -3
-
-# [E] 练气功法-聚灵纳气诀 (gf=19)
-execute as @a[tag="属性校准",scores={gf=19}] if entity @s[tag="属性校准",scores={gf=19}] run scoreboard players add @s hp2 400
-execute as @a[tag="属性校准",scores={gf=19}] if entity @s[tag="属性校准",scores={gf=19}] run scoreboard players add @s atk 4
-execute as @a[tag="属性校准",scores={gf=19}] if entity @s[tag="属性校准",scores={gf=19}] run scoreboard players add @s fy 2
-
-# [C-] 练气功法-八荒镇海桩 (gf=20)
-execute as @a[tag="属性校准",scores={gf=20}] if entity @s[tag="属性校准",scores={gf=20}] run scoreboard players add @s hp2 700
-execute as @a[tag="属性校准",scores={gf=20}] if entity @s[tag="属性校准",scores={gf=20}] run scoreboard players add @s hx 4
-#筑基（101-200）
-
-#金丹（201-300）
-
-#元婴（301-400）
-
-#千机玉寰金章301_10
-#无效果
-
-#化神（401-500）
-
-#合道（501-600）
 
 #筑基奇物 
 # tdqw 提供永久额外属性；筑基后每次属性校准都会重新叠加。
@@ -440,26 +329,100 @@ execute if entity @a[tag="属性校准"] run scoreboard players add @a[tag="属�
 execute if entity @a[scores={tdqw=5}] as @a[scores={tdqw=8}]  run effect @s night_vision  infinite 0 true
 execute if entity @a[scores={tdqw=5}] as @a[scores={tdqw=5}]  run effect @s night_vision  infinite 0 true
 execute if entity @a[scores={tdqw=5}] as @a[scores={tdqw=5}]  run effect @s speed infinite 1 true 
-# 不眠瞳有常驻夜视和速度效果，直接在校准阶段补效果。
-# execute if entity @a[tag="属性校准"] as @a[tag="属性校准"] run tag @s add 属性校准a
+#功法
+# 功法在基础属性之后叠加，gf 分段对应不同大境界功法。
+#练气（1-100）
+#小衍水决1_1
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=1}] ll2gf 50
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=1}] hlgf 3
+# [E+] 玄黄清心咒 (gf=2)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=2}] hp2gf 200
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=2}] atkgf 5
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=2}] fygf 3
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=2}] hxgf 1
+# [D+] 玄黄练心诀 (gf=3)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=3}] hp2gf 350
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=3}] atkgf 8
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=3}] fygf 5
+# [D] 烘炉功 (gf=4)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=4}] hp2gf -75
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=4}] fygf -1
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=4}] atkgf 10
+# [D++] 云水幻梦功 (gf=5)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=5}] hp2gf 580
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=5}] atkgf 8
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=5}] fygf 3
+# [D++] 造化烘炉功 (gf=6)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=6}] hp2gf -150
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=6}] fygf -5
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=6}] atkgf 20
+# [E++] 破阵子 (gf=7)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=7}] atkgf 10
+# [E++] 铁布衫 (gf=8)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=8}] atkgf -5
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=8}] fygf 6
+# [C-] 星尘引气诀 (gf=9)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=9}] hp2gf 700
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=9}] atkgf 10
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=9}] fygf 6
+# [D] 青木生长诀 (gf=10)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=10}] hp2gf 350
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=10}] hxgf 2
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=10}] hlgf 2
+# [E] 练气功法-厚土归元功 (gf=11)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=11}] hp2gf 300
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=11}] fygf 5
+# [D++] 练气功法-庚金裂石决 (gf=12)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=12}] atkgf 15
+# [D+] 练气功法-坐山诀 (gf=13)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=13}] fygf 3
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=13}] hp2gf 400
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=13}] hxgf 3
+# [D] 练气功法-风息步 (gf=14)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=14}] atkgf 7
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=14}] ll2gf 20
+# [E-?] 练气功法-藏剑术 (gf=15)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=15}] atkgf 10
+# [C-] 练气功法-五灵感气法 (gf=16)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=16}] atkgf 8
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=16}] fygf 5
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=16}] hp2gf 500
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=16}] ll2gf 50
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=16}] hxgf 4
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=16}] hlgf 2
+# [D+] 练气功法-大日金乌诀 (gf=17)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=17}] atkgf 5
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=17}] hp2gf 800
+# [D++] 练气功法-灵植共生法 (gf=18)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=18}] hp2gf 1000
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=18}] hxgf 10
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=18}] atkgf -10
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=18}] fygf -3
+# [E] 练气功法-聚灵纳气诀 (gf=19)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=19}] hp2gf 400
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=19}] atkgf 4
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=19}] fygf 2
+# [C-] 练气功法-八荒镇海桩 (gf=20)
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=20}] hp2gf 700
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=20}] hxgf 4
+
+# 法不可同修
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hp2gf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s ll2gf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hxgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hlgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s atkgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s fygf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s bjgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s bsgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s mzgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s sbgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s zsgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s xxgf /= @s gfrs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s xygf /= @s gfrs
+
+
 execute if entity @a[tag="属性校准"] run tag @a[tag="属性校准"] remove "属性校准"
-# execute as @a[tag=属性校准a] run scoreboard players add @s atk 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s fy 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s hp2 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s ll2 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s hl 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s hx 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s bj 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s bs 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s sb 0
-# execute as @a[tag=属性校准a] run scoreboard players add @s zs 0
-# execute as @a[tag=属性校准a] run tag @s remove 属性校准a
-
-
-
-
-
-#突破升级 tpzt-突破状态 1-初始化 2和3是鱼竿循环
-# 清理突破标签，避免下个 tick 重复升境界；非突破试炼状态的 tpzt 也回到 0。
+execute if entity @a[tag="法不可同修"] run tag @a[tag="法不可同修"] remove "法不可同修"
 tag @a[tag=tp] remove tp
 scoreboard players set @a[tag=!tpsj,scores={tpzt=2..}] tpzt 0 

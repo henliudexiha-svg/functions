@@ -69,6 +69,33 @@ scoreboard objectives add ldjy dummy
 scoreboard objectives add ldjy2 dummy
 scoreboard objectives add gf dummy
 scoreboard objectives add gftime dummy
+# 功法同修人数：gfrs 同时作为功法属性的除数，最低为 1。
+# rs/rsa 用于检测在线人数变化和新上线玩家。
+scoreboard objectives add gfrs dummy
+# 重算过程中的临时同修人数，全部玩家处理完后再写回 gfrs。
+scoreboard objectives add gfrst dummy
+scoreboard objectives add rs dummy
+scoreboard objectives add rsa dummy
+scoreboard players set @a gfrs 1
+scoreboard players set rs rs 0
+scoreboard players set "gfrs_recalc" rs 0
+# 强制 xh.mcfunction 第一次轮询时重算。
+scoreboard players set rsa rs -1
+# 功法独立属性，由 djsx.mcfunction 按 gf 编号写入。
+scoreboard objectives add atkgf dummy
+scoreboard objectives add fygf dummy
+scoreboard objectives add hp2gf dummy
+scoreboard objectives add ll2gf dummy
+scoreboard objectives add hxgf dummy
+scoreboard objectives add hlgf dummy
+scoreboard objectives add bjgf dummy
+scoreboard objectives add bsgf dummy
+scoreboard objectives add mzgf dummy
+scoreboard objectives add sbgf dummy
+scoreboard objectives add zsgf dummy
+scoreboard objectives add xxgf dummy
+scoreboard objectives add xygf dummy
+scoreboard objectives add shxsgf dummy
 # 最终属性缓存：战斗、面板和回复都读取这些值，避免每条命令重复叠加装备和 buff。
 # 玩家最终防御 # 玩家最终伤害
 scoreboard objectives add atkatk dummy     

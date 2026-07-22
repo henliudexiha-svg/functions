@@ -150,7 +150,11 @@ execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s 
 execute as @a[tag="攻击",scores={tick=1}] if score @s sjshxs matches 0 run scoreboard players set @s sjshxs 1 
 #吸血系统
 # 吸血按最终伤害和命中人数 jzrs 计算，显示数值写入 xxxs。
-execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s temp *= @s xx
+execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s tempa = @s xx
+execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s tempb = @s xxgf
+execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s tempb /= @s gfrs
+execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s tempa += @s tempb
+execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s temp *= @s tempa
 execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s temp /= "100" sum 
 execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s temp *= "jzrs" jzrs
 execute as @a[tag="攻击",scores={tick=1}] run scoreboard players operation @s hp += @s temp
