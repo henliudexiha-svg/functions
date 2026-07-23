@@ -35,6 +35,8 @@ execute if score "10" tick matches 5 if entity @a[tag="法不可同修"] run fun
 execute if score "5s" tick matches 5 run scoreboard players set rs rs 0
 execute if score "5s" tick matches 5 as @a run scoreboard players add rs rs 1
 execute if score "5s" tick matches 5 unless score rs rs = rsa rs run scoreboard players set "gfrs_recalc" rs 2
+# 坐山决
+execute if score "5s" tick matches 5 unless score rs rs = rsa rs run tag @a[scores={gf=102}] add "法不可同修"
 execute if score "5s" tick matches 5 run scoreboard players reset * rsa
 execute if score "5s" tick matches 5 run scoreboard players add @a rsa 1
 execute if score "5s" tick matches 5 run scoreboard players operation rsa rs = rs rs
