@@ -63,81 +63,50 @@ execute  as @a run scoreboard players reset * tempa
 execute  as @a run scoreboard players operation @s tempa = @s atk
 execute  as @a run scoreboard players operation @s tempa += @s atka
 execute  as @a run scoreboard players operation @s tempa += @s ksatk
-execute  as @a run scoreboard players operation @s tempb = @s atkgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s atkatk = @s tempa
 execute  as @a run scoreboard players operation @s tempa = @s zs
 execute  as @a run scoreboard players operation @s tempa += @s zsa
-execute  as @a run scoreboard players operation @s tempb = @s zsgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s zszs = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s bj
 execute  as @a run scoreboard players operation @s tempa += @s bja
-execute  as @a run scoreboard players operation @s tempb = @s bjgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s bjbj = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s bs
 execute  as @a run scoreboard players operation @s tempa += @s bsa
-execute  as @a run scoreboard players operation @s tempb = @s bsgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s bsbs = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s mz
 execute  as @a run scoreboard players operation @s tempa += @s mza
-execute  as @a run scoreboard players operation @s tempb = @s mzgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s mzmz = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s fy
 execute  as @a run scoreboard players operation @s tempa += @s fya
 execute  as @a run scoreboard players operation @s tempa += @s ksfy
-execute  as @a run scoreboard players operation @s tempb = @s fygf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s fyfy = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s sb
 execute  as @a run scoreboard players operation @s tempa += @s sba
-execute  as @a run scoreboard players operation @s tempb = @s sbgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s sbsb = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s ll2
 execute  as @a run scoreboard players operation @s tempa += @s ll2a
-execute  as @a run scoreboard players operation @s tempb = @s ll2gf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s ll2ll2 = @s tempa
 
 execute  as @a run scoreboard players operation @s tempa = @s hp2
 execute  as @a run scoreboard players operation @s tempa += @s hp2a
-execute  as @a run scoreboard players operation @s tempb = @s hp2gf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s hp2hp2 = @s tempa
 # 自然恢复也使用最终值，避免装备/丹药加成被遗漏。
 execute  as @a run scoreboard players operation @s tempa = @s hx
 execute  as @a run scoreboard players operation @s tempa += @s hxa
-execute  as @a run scoreboard players operation @s tempb = @s hxgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s hxhx = @s tempa
 execute  as @a run scoreboard players operation @s tempa = @s hl
 execute  as @a run scoreboard players operation @s tempa += @s hla
-execute  as @a run scoreboard players operation @s tempb = @s hlgf
-execute  as @a run scoreboard players operation @s tempb /= @s gfrs
-execute  as @a run scoreboard players operation @s tempa += @s tempb
 execute  as @a run scoreboard players operation @s hlhl = @s tempa
 
 
 
 execute  as @a run scoreboard players reset * tempa
-execute  as @a run scoreboard players reset * tempb
+
+
+

@@ -495,6 +495,19 @@ execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run s
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s xxgf /= @s gfrs
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s xygf /= @s gfrs
 
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hp2 += @s hp2gf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s ll2 += @s ll2gf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hx += @s hxgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hl += @s hlgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s atk += @s atkgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s fy += @s fygf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s bj += @s bjgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s bs += @s bsgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s mz += @s mzgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s sb += @s sbgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s zs += @s zsgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s xx += @s xxgf
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s xy += @s xygf
 
 execute if entity @a[tag="属性校准"] run tag @a[tag="属性校准"] remove "属性校准"
 execute if entity @a[tag="法不可同修"] run tag @a[tag="法不可同修"] remove "法不可同修"
