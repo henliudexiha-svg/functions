@@ -14,7 +14,7 @@ execute as @e[family=mob,name="§7§l蠹蠹虫",scores={hp=..0}] at @s if score 
 execute as @e[family=mob,name="§7§l蠹蠹虫",scores={hp=..0}] at @s if score @s gwrand matches 2000..6000 run structure load "ddcnj" ~ ~0.5 ~
 execute as @e[family=mob,name="§7§l蠹蠹虫",scores={hp=..0}] at @s if score @s gwrand matches 2000..5000 run structure load "ddcnj" ~ ~0.5 ~
 execute as @e[family=mob,name="§7§l蠹蠹虫",scores={hp=..0}] at @s if score @s gwrand matches 2000..3000 run structure load "ddcnj" ~ ~0.5 ~
-execute as @e[family=mob,name="§r§j百年§7§l蠹蠹虫",tag=!ss] run scoreboard players set @s hp 500
+execute as @e[family=mob,name="§r§j百年§7§l蠹蠹虫",tag=!ss] run scoreboard players set @s hp 200
 execute as @e[family=mob,name="§r§j百年§7§l蠹蠹虫",tag=!ss] run scoreboard players set @s atk 20
 execute as @e[family=mob,name="§r§j百年§7§l蠹蠹虫",scores={hp=..0}] at @s if score @s gwrand matches 1..6000 run structure load "bnddc1"~ ~0.5 ~
 execute as @e[family=mob,name="§r§j百年§7§l蠹蠹虫",scores={hp=..0}] at @s if score @s gwrand matches 1..4000 run structure load "bnddc1"~ ~0.5 ~
@@ -31,7 +31,7 @@ execute as @e[family=mob,name="§r§j百年§7§l蠹蠹虫",scores={hp=..0}] at 
 execute as @e[family=mob,name="§a树精",tag=!ss] run scoreboard players set @s hp 360
 execute as @e[family=mob,name="§a树精",tag=!ss] run scoreboard players set @s hp2 360
 execute as @e[family=mob,name="§a树精",tag=!ss] run scoreboard players set @s fyfy 3
-execute as @e[family=mob,name="§a树精",tag=!ss] run scoreboard players set @s atk 15
+execute as @e[family=mob,name="§a树精",tag=!ss] run scoreboard players set @s atk 36
 execute as @e[family=mob,name="§a树精",tag=!ss] run scoreboard players set @s hx 4
 execute as @e[family=mob,name="§a树精",scores={hp=..0}] at @s if score @s gwrand matches 1..7000 run structure load "sjdlw1" ~ ~0.5 ~
 execute as @e[family=mob,name="§a树精",scores={hp=..0}] at @s if score @s gwrand matches 1..5000 run structure load "sjdlw1" ~ ~0.5 ~
@@ -46,8 +46,8 @@ execute as @e[family=mob,name="§a树精",scores={hp=..0}] at @s if score @s gwr
 execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hp 1200
 execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hp2 1200
 execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s fyfy 15
-execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s atk 45
-execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hx 10
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s atk 125
+execute as @e[family=mob,name="§a树妖",tag=!ss] run scoreboard players set @s hx 12
 execute as @e[family=mob,name="§a树妖",tag=!ss] run effect @s speed infinite 1 true
 
 

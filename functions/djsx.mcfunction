@@ -111,7 +111,7 @@ tag @a[tag=tp] add "属性校准"
 #dj=1属性 回蓝(hl)=0 暴击(bj)=2 暴击伤害加成(bs)=10 闪避(sb)=1
 #dj=1属性 攻击(atk)=3 防御(fy)=2
 #练气初期 
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] atk 3
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] atk 7
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] hp2 150
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] ll2 150
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] hl 1
@@ -123,7 +123,7 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=1}] jy2 150
 #练气中期
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=2}] atk 5
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=2}] atk 12
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=2}] hp2 250
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=2}] ll2 165
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=2}] hx 2
@@ -135,7 +135,7 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=2}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=2}] jy2 200
 #练气后期
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=3}] atk 7
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=3}] atk 17
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=3}] hp2 350
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=3}] ll2 225
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=3}] hx 3
@@ -147,7 +147,7 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=3}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=3}] jy2 600
 #练气圆满
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=4}] atk 10
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=4}] atk 23
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=4}] hp2 450
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=4}] ll2 300
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=4}] hx 4
@@ -163,7 +163,7 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 
 
 #筑基初期-要筑基奇物
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] atk 35
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] atk 70
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] hp2 1000
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] ll2 800
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] hx 15
@@ -171,11 +171,11 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] bj 3
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] bs 30
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] sb 1
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] fy 15
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] fy 20
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=5}] jy2 2500
 ##筑基中期
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=6}] atk 43
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=6}] atk 105
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] hp2 1500
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] ll2 1000
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] hx 20
@@ -183,11 +183,11 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] bj 4
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] bs 35
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] sb 1
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] fy 19
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] fy 30
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=6}] jy2 3800
 ##筑基后期
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=7}] atk 51
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准", scores={dj=7}] atk 140
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] hp2 2000
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] ll2 1200
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] hx 30
@@ -195,11 +195,11 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] bj 4
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] bs 39
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] sb 2
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] fy 23
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] fy 40
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=7}] jy2 6800
 ##筑基圆满
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] atk 59
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] atk 175
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] hp2 2500
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] ll2 1400
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] hx 40
@@ -207,7 +207,7 @@ execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] bj 4
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] bs 44
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] sb 2
-execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] fy 27
+execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] fy 50
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] zs 1
 execute if entity @a[tag="属性校准"]  run scoreboard players set @a[tag="属性校准",scores={dj=8}] jy2 12000
 
