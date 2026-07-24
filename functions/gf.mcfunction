@@ -195,3 +195,7 @@ execute as @a[scores={gftime=0},tag=gf] at @s run particle minecraft:totem_parti
 execute as @a[scores={gftime=0},tag=gf] run tag @s add "属性校准"
 execute as @a[scores={gftime=0},tag=gf] run tag @s remove gf 
   scoreboard players add @a gf 0
+
+
+
+

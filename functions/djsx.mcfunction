@@ -430,10 +430,10 @@ execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run s
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=102}] hxgf 5
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=102}] hlgf 5
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=102}] atkgf 5
-execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hp2gf *=  rsa rs
-execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s ll2gf *=  rsa rs
-execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hxgf *=  rsa rs
-execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hlgf *=  rsa rs
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hp2gf *= @s rsa
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s ll2gf *=  @s rsa
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hxgf *=  @s rsa
+execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players operation @s hlgf *=  @s rsa
 # 筑基-沧海游龙功
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=103}] ll2gf 666
 execute as @a unless entity @s[tag=!"属性校准",tag=!"法不可同修"] run scoreboard players set @s[scores={gf=103}] hlgf 30
